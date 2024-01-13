@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Warning } from "./Warning";
 
-export const Textarea = () => {
-  const [text, setText] = useState("");
+export const Textarea = ({ text, setText }) => {
   const [warningText, setWarningText] = useState("");
 
   const handleChange = (e) => {
