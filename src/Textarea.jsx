@@ -14,6 +14,8 @@ export const Textarea = () => {
     } else if (newText.includes("@")) {
       setWarningText("No @ symbol allowed.");
       newText = newText.replace("@", "");
+    } else {
+      setWarningText("");
     }
 
     setText(newText);
